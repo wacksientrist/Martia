@@ -13,7 +13,7 @@ class Tracker():
         self.color_bgr = np.array([self.color_bgr], dtype=np.uint8)
 
         self.Camera1 = cv2.VideoCapture(0)
-        #self.Camera2 = cv2.VideoCapture(0)
+        #self.Camera2 = cv2.VideoCapture(1)
     def convert_rgb(self):
         Red = int(self.color_hex[0]+self.color_hex[1], 16)
         Green = int(self.color_hex[2]+self.color_hex[3], 16)
